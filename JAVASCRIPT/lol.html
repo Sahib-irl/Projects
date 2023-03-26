@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .button {
+        border: 2px solid black;
+        padding: 5px 10px;
+        border-radius: 14px;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        margin-left: 655px;
+        margin-top: 35px;
+    }
+
+    #head {
+        text-align: center;
+
+    }
+
+    #para {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 id="head"><u>Programming is cool</u></h1>
+        <p id="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique minima, quae ut assumenda sunt quidem
+            repellat blanditiis pariatur quia et nobis ipsa corrupti nihil ab laboriosam sed magnam qui cum! Quos
+            voluptates, est itaque expedita esse accusantium aperiam consequatur nam corrupti, possimus omnis facere,
+            distinctio inventore? Culpa repellendus asperiores sint assumenda repellat mollitia quaerat illum odio
+            incidunt alias iusto ut minus quasi provident obcaecati repudiandae sunt cumque sit, beatae aliquid
+            molestiae! Consequatur quisquam neque nesciunt. Aliquam totam officiis possimus est quo magnam eligendi
+            illum porro iusto unde reprehenderit odit, iure, corporis ab ipsa nemo repudiandae veniam reiciendis. Hic,
+            iure tenetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reiciendis iure itaque
+            assumenda sequi? Ea vero, ipsum velit voluptatum veniam quod eligendi officiis facilis deserunt, fuga fugit
+            quas nihil! Maiores laboriosam eaque culpa nisi corporis?
+        </p>
+    </div>
+    <button class="button" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        let para = document.getElementById("para");
+        para.addEventListener('mouseover', function run() {
+            console.log("Mouse andar aagya")
+
+        });
+        para.addEventListener('mouseout', function run() {
+            console.log("Mouse bahar aagya")
+
+        });
+
+
+        function toggleHide() {
+            let button = document.getElementById("button");
+            let para = document.getElementById("para");
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                 para.style.display = 'block';
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html> 

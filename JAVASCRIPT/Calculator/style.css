@@ -1,0 +1,31 @@
+.button{
+    padding: 7px;
+    margin: 2px 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50px;
+} 
+
+
+.row{
+    margin: 7px 0;
+    
+} 
+
+
+.search{
+    margin: 0;
+    padding: 7 px;
+
+}
+
+.search input{
+    margin: 0;
+    padding: 11px 38px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 151px;
+
+
+}
